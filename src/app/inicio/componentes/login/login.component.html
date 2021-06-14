@@ -1,0 +1,26 @@
+<div class="bg-form-login">
+  <mat-progress-bar *ngIf="processando" color="warn" mode="indeterminate"></mat-progress-bar>
+  <form (ngSubmit)="onSubmit(formLogin)" class="form-login" #formLogin="ngForm" autocomplete="off">
+    <h2>{{ titulo }}</h2>
+    <div fxLayout="row">
+      <mat-form-field appearance="outline" matTooltip="Digite seu Usuário" fxFlex="100">
+        <mat-label>Usuário</mat-label>
+        <input [disabled]="processando" required matInput placeholder="Digite seu usuário" [(ngModel)]="login.usuario" name="usuario" #usuario="ngModel">
+        <mat-error *ngIf="usuario.hasError('required')">Campo Usuário é Obrigatório</mat-error>
+      </mat-form-field>
+    </div>
+    <div fxLayout="row">
+      <mat-form-field appearance="outline" matTooltip="Digite sua Senha" fxFlex="100">
+        <mat-label>Senha</mat-label>
+        <input autocomplete="new-password" type="password" [disabled]="processando" required matInput placeholder="Digite sua Senha" [(ngModel)]="login.senha" name="senha" #senha="ngModel">
+        <mat-error *ngIf="senha.hasError('required')">Campo Senha é Obrigatório</mat-error>
+      </mat-form-field>
+    </div>
+    <div fxLayout="row" fxLayoutAlign="start">
+      <a class="link" href="#">Esqueceu a senha</a>
+    </div>
+    <div class="mt-20" fxLayout="row" fxLayoutAlign="end center">
+      <button [disabled]="processando || formLogin.invalid" fxFlex="auto" mat-raised-button color="warn">Entrar</button>
+    </div>
+  </form>
+</div>

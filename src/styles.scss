@@ -1,1 +1,514 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+html, body { height: 100%; }
+body {
+    margin: 0;
+    h1, h2, h3, h4, h5, h6, p, span, li {
+        font-family: 'Zilla Slab', Roboto, "Helvetica Neue", sans-serif !important;
+    }
+}
+
+
+
+
+/************************************** GERAL ****************************************/
+$primeira: #673ab7;
+$segunda: #B9FF16;
+$terceira: #354EC4;
+$quarta: #6a6a6a;
+$quinta: #92cd03;
+
+.w-350 { width: 350px !important; }
+.w-100 { width: 100% }
+.w-90 { width: 90% }
+.w-70 { width: 70%; }
+.w-60 { width: 60%; }
+.h-100 { height: 100%; }
+.h-90 { height: 90%; }
+.h-80 { height: 80%; }
+.h-70 { height: 70%; }
+.m-auto { margin: auto }
+.mt-0 { margin-top: 0px; }
+.mt-10 { margin-top: 10px; }
+.mt-30 { margin-top: 30px; }
+.mt-20 { margin-top: 20px; }
+.p-0 { padding: 0px; }
+.p-10 { padding: 10px; }
+.p-20 { padding: 20px; }
+.p-30 { padding: 30px; }
+.pt-0 { padding-top: 0px; }
+.pt-10 { padding-top: 10px; }
+.pt-20 { padding-top: 20px; }
+.pt-30 { padding-top: 30px; }
+.pl-0 { padding-left: 0px; }
+.pl-10 { padding-left: 10px; }
+.pl-20 { padding-left: 20px; }
+.pl-30 { padding-left: 30px; }
+.pr-0 { padding-right: 0px; }
+.pr-10 { padding-right: 10px; }
+.pr-20 { padding-right: 20px; }
+.pr-30 { padding-right: 30px; }
+.mb-0 { margin-bottom: 0px; }
+.mb-30 { margin-bottom: 30px; }
+.ml-0 { margin-left: 0px !important; }
+.ml-10 { margin-left: 10px !important; }
+.ml-20 { margin-left: 20px !important; }
+.mr-0 { margin-right: 0px !important; }
+.mr-10 { margin-right: 10px !important; }
+.mr-20 { margin-right: 20px !important; }
+.pr-5 { padding-right: 5px !important; }
+.bg-black { background-color: black; }
+.bg-blue { background-color: $primeira; }
+.text-center { text-align: center; }
+.wrap { word-wrap: break-word; }
+.hidden { display: none }
+.fs-12 { font-size: 12px !important;}
+.fs-13 { font-size: 13px !important;}
+.fs-14 { font-size: 14px !important;}
+.fs-15 { font-size: 15px !important;}
+.fs-16 { font-size: 16px !important;}
+.fs-17 { font-size: 17px !important;}
+.fs-18 { font-size: 18px !important;}
+.fs-50 { font-size: 50px !important;}
+.fw-100 { font-weight: 100 !important; }
+.fw-200 { font-weight: 200 !important; }
+.fw-300 { font-weight: 300 !important; }
+.fw-400 { font-weight: 400 !important; }
+.fw-500 { font-weight: 500 !important; }
+.fw-600 { font-weight: 600 !important; }
+.fw-700 { font-weight: 700 !important; }
+.fw-800 { font-weight: 800 !important; }
+.fc-white { color: white !important;};
+.upper-case { text-transform: uppercase; }
+.icon-50 { height: 50px !important; width: 50px !important; }
+.text-black { color: black !important; }
+.mtb-025rem { margin: 0.25rem 0 !important; }
+.text-disabled-gray { color: #c8c8c8; }
+.rounded { border-radius: 100% !important; }
+.bg-red { background-color: red; }
+.bg-yellow { background-color: $segunda; }
+.bg-yellow2 { background-color: $quinta; }
+.d-block { display: block !important; }
+.link { color: $quarta; }
+.link:hover { color: red; }
+.subtitulo { color: $quarta; }
+.separador-1-1 { flex: 1 1 auto; }
+.max-hw-200 {
+  max-height: 200px;
+  max-width: 200px;
+}
+.max-hw-100 {
+  max-height: 100px;
+  max-width: 100px;
+}
+.max-hw-60 {
+  max-height: 60px;
+  max-width: 60px;
+}
+/************************************** GERAL FIM ****************************************/
+
+
+
+/************************************** BACKGROUND ****************************************/
+.bg-header-1 {
+  background-image: url("assets/imagens/bg/pc.png");
+  background-size: cover;
+}
+.bg-header-2 {
+  // background-image: url("assets/images/bg/bg_2.jpg");
+  background-size: cover;
+}
+/************************************** BACKGROUND FIM ****************************************/
+
+
+
+/************************************** HEADER ****************************************/
+.header h1{
+    width: 90%;
+    margin: auto;
+}
+.logo {
+    img { max-height: 50px; }
+}
+.container-logo { height: 130px; }
+.fab-acessar-conta {
+  height: 35px;
+  width: 35px;
+}
+.titulo-tabs {
+  text-transform: uppercase;
+  font-width: bold;
+}
+.formulario {
+  background-color: white;
+  padding: 10px;
+}
+.tabs {
+  background-color: rgba(0,0,0,0.5);
+}
+/************************************** HEADER FIM ****************************************/
+
+
+
+/************************************** SIDE NAV INICIO ***********************************/
+.sidenav-container {
+  width: auto;
+  min-height: 500px;
+  height: auto;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.sidenav-content {
+  display: flex;
+  height: 100%;
+}
+.sidenav {
+  padding: 20px;
+  min-width: 200px;
+}
+.imagem-avatar {
+  max-height: 80px;
+}
+.mat-toolbar-row, .mat-toolbar-single-row {
+  height: 45px;
+}
+.link-sidenav {
+  text-decoration: none;
+  color: #a9a9a9;
+}
+.icone-sidenav {
+  color: #a9a9a9
+}
+/************************************** SIDE NAV FIM *************************************/
+
+
+
+/************************************** FOOTER ****************************************/
+.footer {
+    width: 90%;
+    margin: auto;
+    padding: 50px 0 50px 0;
+    * {
+        color: white;
+        font-size: 14px !important;
+    }
+    h2 {
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+    a {
+        text-decoration: none;
+        cursor: pointer;
+    }
+    a:hover {
+        color: #8a2be2;
+        transition: 0.3s;
+    }
+    ul {
+        margin-top: 0;
+        list-style: none;
+        padding: 0;
+        li {
+            padding: 5px 0;
+            h3 {
+                margin: 0px;
+            }
+        }
+    }
+    .phone {
+        font-weight: 700;
+    }
+    .redes {
+        font-size: 50px !important;
+    }
+}
+.rodape {
+  padding-top: 20px;
+  background-color: $terceira;
+  margin: auto;
+  * {
+    color: white;
+  }
+  p {
+    font-size: 12px !important;
+  }
+}
+/************************************** FOOTER FIM ****************************************/
+
+
+
+
+/************************************** BOTOES ****************************************/
+button {
+    height: 50px;
+}
+.mat-raised-button.mat-primary:hover:not([disabled]) {
+    background-color: rgb(185, 255, 22) !important;
+    color: black;
+    .bg-yellow2 {
+      background: $terceira;
+      color: white;
+    }
+}
+.mat-raised-button.mat-primary:active:not([disabled]) {
+    background-color: rgb(142, 202, 0) !important;
+    color: white;
+}
+.btn-disabled {
+  margin: 0.25rem 0 !important;
+}
+.btn-disabled:disabled {
+  background-color: #e0e0e0 !important;
+}
+/************************************** BOTOES FIM ****************************************/
+
+
+
+/************************************** LOGIN ****************************************/
+.bg-form-login {
+  background-color: white;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.form-login {
+  padding: 15px;
+}
+/************************************** LOGIN FIM ****************************************/
+
+
+/************************************** LOGIN ****************************************/
+.bg-login {
+  background-image: url("assets/imagens/bg/pc.png");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-position: bottom;
+}
+.titulo-login {
+  color: white;
+  img {
+    height: 80px;
+    display: block;
+  }
+  h2 {
+    margin-top: 20px;
+    font-size: 48px;
+    line-height: 50px;
+  };
+  a {
+    color: red;
+  }
+  a:hover {
+    color: #678af8;
+  }
+}
+/************************************** LOGIN ****************************************/
+
+
+
+/************************************** VIEW ****************************************/
+.container-view{
+    padding: 30px 80px !important;
+    background-color: #e6e6e6 !important;
+    .content {
+      background-color: white;
+      border-radius: 5px;
+      padding: 50px;
+    }
+    .titulo-pagina {
+      text-transform: uppercase;
+      color: $terceira;
+      font-weight: 500;
+      font-size: 30px;
+      text-align: center;
+    }
+    .descricao {
+      font-size: 18px;
+      color: $quarta;
+      font-weight: 100;
+    }
+}
+.inscreva-se {
+  // background-image: url("assets/images/bg/bg_img.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+  * {
+    color: white !important;
+  }
+  button:disabled {
+    background-color: #e0e0e0 !important;
+    span {
+      color: #828282 !important;
+      font-weight: 100;
+    }
+  }
+  button {
+    height: 50px;
+    margin: 0.25rem;
+  }
+  h2 {
+    font-size: 24px;
+    margin-bottom: 0;
+  }
+  h3 {
+    font-size: 18px;
+  }
+}
+.depoimentos {
+  padding: 100px 0;
+  h2 {
+    font-size: 24px;
+  }
+}
+.container-router {
+  padding: 80px;
+  background-color: #d7d7d7;
+}
+/************************************** VIEW FIM ****************************************/
+
+
+
+
+
+/************************************** FILE *********************************************/
+.uploadfilecontainer {
+  // background-image: url("assets/images/upload.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  height: 50px;
+  width: 100%;
+  margin: 10px auto;
+  border: 2px dashed #1C8ADB;
+  border-radius: 10px;
+}
+
+.uploadfilecontainer:hover {
+  cursor: pointer;
+  background-color: #9ecbec !important;
+  opacity: 0.8;
+}
+.files-list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: min-content;
+  margin: 10px auto;
+  background: #ffffff;
+  border: 1px dashed;
+  border-radius: 12px;
+  padding: 5px;
+  color: #1c8adb;
+  p {
+    margin-bottom: 0;
+    height: min-content;
+  }
+  button {
+    height: min-content;
+  }
+}
+.files-list .delete-file {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.files-list .delete-file {
+  width: 30px;
+  color: red;
+}
+/************************************** FILE FIM *********************************************/
+
+
+
+
+
+/************************************** MEDIA QUERY ****************************************/
+@media screen and (max-width: 1279px) {
+  .container-view{
+    padding: 30px 50px !important;
+    .w-60 {
+      width: 70%;
+    }
+    .titulo-pagina {
+      font-size: 25px;
+    }
+    .descricao {
+      font-size: 16px;
+    }
+  }
+  .mat-mini-fab {
+    height: 35px !important;
+    width: 35px !important;
+    .material-icons {
+      font-size: 20px;
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  .container-view{
+    padding: 30px 35px !important;
+    .w-60 {
+      width: 85%;
+    }
+    .titulo-pagina {
+      font-size: 22px;
+    }
+    .descricao {
+      font-size: 15px;
+    }
+  }
+  .mat-mini-fab {
+    height: 30px !important;
+    width: 30px !important;
+    .material-icons {
+      font-size: 18px;
+      align-self: center;
+      line-height: 10px;
+    }
+  }
+  button {
+    height: 40px;
+    font-size: 12px !important;
+  }
+}
+@media screen and (max-width: 799px) {
+  .container-view{
+    padding: 30px 20px !important;
+    .w-60 {
+      width: 95% !important;
+    }
+    .titulo-pagina {
+      font-size: 20px;
+    }
+    .descricao {
+      font-size: 14px;
+    }
+  }
+  button {
+    height: 35px;
+  }
+  .mat-mini-fab {
+    height: 25px !important;
+    width: 25px !important;
+    .material-icons {
+      font-size: 18px;
+      align-self: center;
+      line-height: 10px;
+    }
+  }
+}
+@media screen and (max-width: 691px) {
+  .hidden-692{
+    display: none !important;
+  }
+  .hidden-692::before {
+    display: none !important;
+  }
+}
+/************************************** MEDIA QUERY FIM ****************************************/
+
+
+
